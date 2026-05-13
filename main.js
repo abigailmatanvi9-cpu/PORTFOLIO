@@ -1,4 +1,68 @@
 (function () {
+  /**
+   * GitHub Pages « projet » : …/github.io/NOM-DEPOT/ — chemins images/…
+   * en absolu pour éviter les 404 (et on attache error avant de charger).
+   */
+  function githubPagesRoot() {
+    var host = location.hostname;
+    if (!host.endsWith("github.io")) return "";
+    var path = location.pathname.replace(/\/index\.html$/i, "");
+    var parts = path.split("/").filter(Boolean);
+    if (parts.length === 0) return "";
+    var repo = parts[0];
+    if (!repo) return "";
+    return location.origin + "/" + repo + "/";
+  }
+
+  function absolutizeAssetPath(relative) {
+    var r = (relative || "").trim();
+    if (!r || /^https?:\/\//i.test(r)) return r;
+    var root = githubPagesRoot();
+    if (!root) return r;
+    return root + r.replace(/^\//, "");
+  }
+
+  var root = githubPagesRoot();
+
+  document.querySelectorAll("img.project-shot").forEach(function (img) {
+    var fallbackRaw = img.getAttribute("data-fallbacks");
+    var paths = [];
+    if (fallbackRaw) {
+      paths = fallbackRaw
+        .split(",")
+        .map(function (s) {
+          var t = s.trim();
+          return root ? absolutizeAssetPath(t) : t;
+        })
+        .filter(Boolean);
+      if (root) {
+        img.setAttribute("data-fallbacks", paths.join(","));
+      }
+    }
+
+    var i = 0;
+    function onError() {
+      if (i >= paths.length) {
+        img.removeEventListener("error", onError);
+        var fig = img.closest("figure");
+        if (fig) {
+          fig.classList.add("shot-missing");
+        }
+        img.setAttribute("hidden", "");
+        return;
+      }
+      img.src = paths[i];
+      i += 1;
+    }
+    img.addEventListener("error", onError);
+
+    var srcAttr = img.getAttribute("src");
+    var firstSrc = root ? absolutizeAssetPath(srcAttr) : srcAttr;
+    if (firstSrc) {
+      img.src = firstSrc;
+    }
+  });
+
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("site-nav");
   if (toggle && nav) {
@@ -18,31 +82,4 @@
   if (y) {
     y.textContent = String(new Date().getFullYear());
   }
-
-  document.querySelectorAll("img.project-shot").forEach(function (img) {
-    var raw = img.getAttribute("data-fallbacks");
-    var paths = raw
-      ? raw
-          .split(",")
-          .map(function (s) {
-            return s.trim();
-          })
-          .filter(Boolean)
-      : [];
-    var i = 0;
-    function onError() {
-      if (i >= paths.length) {
-        img.removeEventListener("error", onError);
-        var fig = img.closest("figure");
-        if (fig) {
-          fig.classList.add("shot-missing");
-        }
-        img.setAttribute("hidden", "");
-        return;
-      }
-      img.src = paths[i];
-      i += 1;
-    }
-    img.addEventListener("error", onError);
-  });
 })();

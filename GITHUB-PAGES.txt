@@ -77,3 +77,18 @@ dossier sur le PC (le vrai fichier commence par <!DOCTYPE html> et le titre
 
 Si tu utilises Git : « git push » doit être fait depuis le dossier PORTFOLIO
 qui contient le vrai projet, pas un autre dossier ou un dépôt vide.
+
+Pages OK mais images (ou CSS) qui ne chargent pas
+-------------------------------------------------
+Cause fréquente : URL du type https://user.github.io/PORTFOLIO sans slash
+final — le navigateur résout mal « images/photo.png ». Ce projet corrige le
+problème avec une balise <base> dans index.html et une réécriture des URLs
+des captures dans main.js. Envoie les dernières versions des deux fichiers
+sur GitHub puis rafraîchis (Ctrl+F5).
+
+Vérifie aussi que le dossier « images » (minuscules) est bien sur GitHub avec
+les fichiers (hairconnect-1.png, etc.). Les captures Mechassist (mechassist-1.png …) doivent
+exister pour que la section Mechassist affiche des photos.
+
+Si tout est sur GitHub mais les images restent cassées : envoie la dernière
+version de main.js (réécriture des URLs en absolu pour GitHub Pages).
