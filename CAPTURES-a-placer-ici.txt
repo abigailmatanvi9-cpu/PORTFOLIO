@@ -1,0 +1,23 @@
+Captures d'écran — où les mettre
+================================
+
+1) Ce dossier doit s'appeler exactement : images
+   Il se trouve au même niveau que le fichier index.html (dossier PORTFOLIO).
+
+2) Enregistre tes fichiers ICI avec l'un de ces noms (le site essaie .png puis .jpg) :
+
+   Mechassist (mobile) :
+     mechassist-1.png   ou   mechassist-1.jpg
+     mechassist-2.png   ou   mechassist-2.jpg
+     mechassist-3.png   ou   mechassist-3.jpg
+
+   Hairconnect (web + mobile) :
+     hairconnect-1.png   ou   hairconnect-1.jpg   (capture vue web / tableau de bord)
+     hairconnect-2.png   ou   hairconnect-2.jpg   (capture mobile / accueil)
+
+3) Vérifie sous Windows que le fichier ne s'appelle pas par exemple
+   "mechassist-1.png.png" (extensions en double). Affiche les extensions
+   dans l'explorateur si besoin.
+
+4) Ouvre le site en double-cliquant sur index.html depuis le dossier PORTFOLIO.
+   Si tu déplaces seulement index.html sans le dossier images, les images ne s'afficheront pas.

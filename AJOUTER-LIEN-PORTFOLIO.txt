@@ -1,0 +1,30 @@
+Ajouter le lien du portfolio sur ton CV (Canva / Word / PDF)
+============================================================
+
+1) Publie d’abord ton portfolio sur Internet (sinon le lien ne sert à rien sur un CV).
+   Exemples : GitHub Pages, Netlify, Vercel, hébergeur de ton école, etc.
+
+2) L’URL à mettre sur le CV est la même que celle affichée sur ton site, section Contact,
+   sous « Portfolio (lien à mettre sur le CV) ».
+
+   Par défaut dans index.html c’est (à adapter si besoin) :
+   https://abigailmatanvi9-cpu.github.io/PORTFOLIO/
+
+   Si ton dépôt GitHub ou ton compte a un autre nom, ouvre index.html et modifie
+   à la fois l’attribut href ET le texte du lien id="portfolio-public-url".
+
+3) Sur le CV — section Coordonnées (ou « Liens »), ajoute par exemple une ligne :
+
+   Portfolio : https://abigailmatanvi9-cpu.github.io/PORTFOLIO/
+
+   ou avec une icône lien si ton modèle le propose.
+
+4) Réexporte ton CV en PDF depuis Canva (ou Word) et remplace le fichier
+   cv/CV-Abigail-Matanvi.pdf dans ce dossier pour que le bouton du portfolio
+   pointe vers la version à jour.
+
+GitHub Pages (rappel rapide)
+----------------------------
+- Crée un dépôt (ex. PORTFOLIO), envoie-y les fichiers du dossier portfolio.
+- Réglages du dépôt → Pages → Source : branche main, dossier / (root).
+- L’URL sera du type : https://<ton-compte>.github.io/<nom-du-depot>/
