@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abigail Matanvi — Portfolio</title>
+    <meta
+      name="description"
+      content="Abigail Matanvi — Licence Mathématiques et Informatique (UCAO-UUT). Projets Mechassist, Hairconnect. Lomé, Togo."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- URL publique du portfolio : modifie href + texte du lien #portfolio-public-url si ton hébergement diffère (Netlify, autre compte GitHub, etc.). -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#">A. Matanvi</a>
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        Menu
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="#presentation">Présentation</a>
+        <a href="#formation">Formation</a>
+        <a href="#competences">Compétences</a>
+        <a href="#projets">Projets</a>
+        <a
+          class="nav-cv"
+          href="cv/CV-Abigail-Matanvi.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Mon CV (PDF)</a
+        >
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <p class="eyebrow">Licence Mathématiques &amp; Informatique · UCAO-UUT</p>
+          <h1>Abigail <span class="name-accent">Matanvi</span></h1>
+          <p class="lead">
+            Développement d’applications mobiles et web, avec une approche
+            rigoureuse issue des mathématiques appliquées et du goût pour les
+            solutions concrètes.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#presentation">Ma présentation</a>
+            <a class="btn btn-ghost" href="#projets">Voir mes projets</a>
+            <a
+              class="btn btn-ghost"
+              href="cv/CV-Abigail-Matanvi.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Télécharger mon CV</a
+            >
+            <a class="btn btn-ghost" href="#contact">Me contacter</a>
+          </div>
+          <dl class="hero-stats">
+            <div>
+              <dt>Formation</dt>
+              <dd>L3 en cours</dd>
+            </div>
+            <div>
+              <dt>Projets mis en avant</dt>
+              <dd>2</dd>
+            </div>
+            <div>
+              <dt>Localisation</dt>
+              <dd>Lomé, Togo</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="presentation" class="section section-presentation">
+        <div class="section-head">
+          <h2>Présentation</h2>
+          <p class="section-sub">
+            Une synthèse alignée sur mon profil professionnel.
+            <a
+              class="inline-cv-link"
+              href="cv/CV-Abigail-Matanvi.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ouvrir le CV en PDF</a
+            >
+          </p>
+        </div>
+        <div class="presentation-layout">
+          <div class="presentation-main card-elevated">
+            <p class="prose presentation-lead">
+              Étudiante en 3<sup>e</sup> année de
+              <strong>Licence Mathématiques et Informatique</strong>, je suis
+              passionnée par la résolution de problèmes complexes et le
+              développement de solutions informatiques innovantes. Mon parcours
+              m’a permis d’acquérir de solides bases théoriques en
+              mathématiques ainsi que des compétences pratiques en
+              programmation. Je suis motivée, rigoureuse et désireuse
+              d’approfondir mes connaissances à travers des projets concrets.
+            </p>
+          </div>
+          <aside class="presentation-aside card-elevated">
+            <h3 class="aside-title">Langues</h3>
+            <ul class="inline-list">
+              <li>Français</li>
+              <li>Anglais</li>
+            </ul>
+            <h3 class="aside-title">Centres d’intérêt</h3>
+            <ul class="checklist compact">
+              <li>Mathématiques appliquées</li>
+              <li>Technologie et innovation</li>
+              <li>Sport</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="formation" class="section section-alt">
+        <div class="section-head">
+          <h2>Formation</h2>
+          <p class="section-sub">Parcours académique tel qu’indiqué sur mon CV.</p>
+        </div>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <span class="timeline-date">2023 — 2026 · En cours</span>
+            <h3>Licence Mathématique et Informatique</h3>
+            <p class="muted">UCAO-UUT — 3<sup>e</sup> année</p>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-date">2023</span>
+            <h3>Baccalauréat — mention Assez bien</h3>
+            <p class="muted">CS Le Rossignol</p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="competences" class="section">
+        <div class="section-head">
+          <h2>Compétences</h2>
+          <p class="section-sub">
+            Compétences techniques, outils et qualités professionnelles.
+          </p>
+        </div>
+        <div class="skill-grid">
+          <article class="card card-skill">
+            <h3>Programmation</h3>
+            <ul class="skill-tags">
+              <li>SQL</li>
+              <li>Java</li>
+              <li>C</li>
+            </ul>
+          </article>
+          <article class="card card-skill">
+            <h3>Outils</h3>
+            <ul class="skill-tags">
+              <li>MySQL</li>
+              <li>VS Code</li>
+            </ul>
+          </article>
+          <article class="card card-skill">
+            <h3>Écosystème projets</h3>
+            <ul class="skill-tags">
+              <li>Flutter</li>
+              <li>Firebase</li>
+              <li>Google Maps</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Prisma</li>
+              <li>PostgreSQL</li>
+              <li>GitHub</li>
+            </ul>
+          </article>
+          <article class="card card-skill">
+            <h3>Soft skills</h3>
+            <ul class="checklist compact">
+              <li>Analyse et rigueur</li>
+              <li>Autonomie</li>
+              <li>Apprentissage rapide</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projets" class="section section-alt">
+        <div class="section-head">
+          <h2>Projets de fin d’année</h2>
+          <p class="section-sub">
+            Réalisations présentées sur mon CV, avec stack et fonctionnalités.
+          </p>
+        </div>
+
+        <article class="project-feature">
+          <div class="project-copy">
+            <span class="pill">Application mobile</span>
+            <h3>Mechassist</h3>
+            <p class="project-lead">
+              Application de mise en relation entre clients et mécaniciens.
+            </p>
+            <ul class="project-list">
+              <li>Authentification utilisateur</li>
+              <li>Géolocalisation</li>
+              <li>Gestion des interventions</li>
+              <li>Notes et avis clients</li>
+            </ul>
+            <div class="project-meta">
+              <span class="meta-label">Technologies</span>
+              <span class="meta-value"
+                >Flutter · Firebase · Google Maps · GitHub</span
+              >
+            </div>
+            <div class="project-actions">
+              <a
+                class="btn btn-primary"
+                href="https://github.com/jojoskino/Mechassist"
+                rel="noopener noreferrer"
+                >Voir sur GitHub</a
+              >
+            </div>
+          </div>
+          <div
+            class="project-panel"
+            role="group"
+            aria-label="Captures d'écran Mechassist"
+          >
+            <div class="shot-stack">
+              <figure class="shot shot--hero">
+                <div class="device-frame device-frame--phone">
+                  <img
+                    class="project-shot"
+                    src="images/mechassist-1.png"
+                    data-fallbacks="images/mechassist-1.jpg,images/mechassist-1.jpeg,images/mechassist-1.webp"
+                    alt="Mechassist — capture d'écran principale"
+                    width="390"
+                    height="844"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </figure>
+              <div class="shot-row" role="list">
+                <figure class="shot shot--thumb" role="listitem">
+                  <img
+                    class="project-shot"
+                    src="images/mechassist-2.png"
+                    data-fallbacks="images/mechassist-2.jpg,images/mechassist-2.jpeg,images/mechassist-2.webp"
+                    alt="Mechassist — autre écran"
+                    width="390"
+                    height="844"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <figure class="shot shot--thumb" role="listitem">
+                  <img
+                    class="project-shot"
+                    src="images/mechassist-3.png"
+                    data-fallbacks="images/mechassist-3.jpg,images/mechassist-3.jpeg,images/mechassist-3.webp"
+                    alt="Mechassist — autre écran"
+                    width="390"
+                    height="844"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-feature project-feature-reverse">
+          <div class="project-copy">
+            <span class="pill">Application web &amp; mobile</span>
+            <h3>Hairconnect</h3>
+            <p class="project-lead">
+              Mise en relation entre professionnels de la coiffure et clients
+              (marketplace, rendez-vous, tableau de bord).
+            </p>
+            <ul class="project-list">
+              <li>Gestion des utilisateurs</li>
+              <li>Prise de rendez-vous</li>
+              <li>Marketplace</li>
+            </ul>
+            <div class="project-meta">
+              <span class="meta-label">Technologies</span>
+              <span class="meta-value"
+                >HTML5 · CSS3 · JavaScript · Firebase · Prisma · PostgreSQL</span
+              >
+            </div>
+            <div class="project-actions">
+              <a
+                class="btn btn-primary"
+                href="https://github.com/abigailmatanvi9-cpu/hairconnect"
+                rel="noopener noreferrer"
+                >Voir sur GitHub</a
+              >
+            </div>
+          </div>
+          <div
+            class="project-panel"
+            role="group"
+            aria-label="Captures d'écran Hairconnect"
+          >
+            <div class="shot-stack">
+              <figure class="shot shot--hero">
+                <div class="device-frame device-frame--browser">
+                  <div class="device-frame__chrome" aria-hidden="true">
+                    <span class="device-frame__dot"></span>
+                    <span class="device-frame__dot"></span>
+                    <span class="device-frame__dot"></span>
+                  </div>
+                  <div class="device-frame__viewport">
+                    <img
+                      class="project-shot"
+                      src="images/hairconnect-1.png"
+                      data-fallbacks="images/hairconnect-1.jpg,images/hairconnect-1.jpeg,images/hairconnect-1.webp"
+                      alt="Hairconnect — tableau de bord client (vue web)"
+                      width="1280"
+                      height="720"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+              </figure>
+              <div class="shot-row shot-row--hairconnect-mobile" role="list">
+                <figure class="shot shot--inline-phone" role="listitem">
+                  <div class="device-frame device-frame--phone device-frame--compact">
+                    <img
+                      class="project-shot"
+                      src="images/hairconnect-2.png"
+                      data-fallbacks="images/hairconnect-2.jpg,images/hairconnect-2.jpeg,images/hairconnect-2.webp"
+                      alt="Hairconnect — écran d'accueil (application mobile)"
+                      width="390"
+                      height="844"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="contact" class="section section-cta">
+        <div class="cta-box card-elevated">
+          <h2>Contact</h2>
+          <p>
+            Coordonnées identiques à mon CV — pour un échange, une question sur
+            un projet ou une opportunité.
+          </p>
+          <div class="contact-grid">
+            <a
+              class="btn btn-primary contact-cv-btn"
+              href="cv/CV-Abigail-Matanvi.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Consulter mon CV (PDF)</a
+            >
+            <p class="portfolio-for-cv">
+              <span class="portfolio-for-cv-label">Portfolio (lien à mettre sur le CV)</span>
+              <a
+                id="portfolio-public-url"
+                class="portfolio-for-cv-link"
+                href="https://abigailmatanvi9-cpu.github.io/PORTFOLIO/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >https://abigailmatanvi9-cpu.github.io/PORTFOLIO/</a
+              >
+              <span class="portfolio-for-cv-note"
+                >Si tu obtiens une page « 404 », le site n’est pas encore publié
+                sur GitHub : suis le guide
+                <strong>GITHUB-PAGES.txt</strong> dans ce dossier.</span
+              >
+            </p>
+            <a
+              class="contact-link"
+              href="mailto:abigailmatanvi02@gmail.com"
+              >abigailmatanvi02@gmail.com</a
+            >
+            <a class="contact-link" href="tel:+22896704557">+228 96 70 45 57</a>
+            <span class="contact-static">Lomé, Togo</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Abigail Matanvi — Portfolio</span>
+      <a
+        class="footer-cv"
+        href="cv/CV-Abigail-Matanvi.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        >CV PDF</a
+      >
+      <span class="footer-year"></span>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

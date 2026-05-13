@@ -1,0 +1,79 @@
+Pourquoi tu vois « 404 — There isn't a GitHub Pages site here »
+================================================================
+
+Ce message apparaît tant que GitHub Pages n’est PAS encore activé pour le
+dépôt, ou que le dépôt n’existe pas / est vide. L’adresse
+https://abigailmatanvi9-cpu.github.io/PORTFOLIO/ n’est qu’un EXEMPLE : elle ne
+fonctionne qu’après avoir créé le dépôt PORTFOLIO sur ton compte GitHub et
+avoir activé Pages.
+
+Étapes (à faire une fois sur github.com)
+-----------------------------------------
+
+1) Connecte-toi à GitHub avec le compte où tu veux héberger le site
+   (ex. abigailmatanvi9-cpu).
+
+2) Crée un NOUVEAU dépôt (bouton vert « New » ou « Nouveau ») :
+   - Nom du dépôt : PORTFOLIO  (ou un autre nom — dans ce cas change l’URL
+     dans index.html pour https://ton-compte.github.io/NOM-DU-DEPOT/)
+   - Laisse le dépôt PUBLIC (Pages gratuit sur dépôt privé = compte payant).
+   - Coche « Add a README » si tu veux, ou laisse vide ; tu peux tout envoyer
+     depuis ton PC ensuite.
+
+3) Envoie les fichiers de CE dossier sur GitHub (méthode au choix) :
+
+   A) Interface web : sur le dépôt → « Add file » → « Upload files » →
+      glisse index.html, styles.css, main.js, dossier images/, dossier cv/, etc.
+
+   B) Git en ligne de commande (depuis le dossier PORTFOLIO sur ton PC) :
+      git init
+      git branch -M main
+      git add .
+      git commit -m "Portfolio"
+      git remote add origin https://github.com/TON_COMPTE/PORTFOLIO.git
+      git push -u origin main
+
+4) Active GitHub Pages :
+   - Ouvre le dépôt sur GitHub → onglet « Settings » (Paramètres)
+   - Menu de gauche : « Pages »
+   - Section « Build and deployment » → Source : « Deploy from a branch »
+   - Branch : main (ou master), dossier : / (root)
+   - Enregistre. Attends 1 à 3 minutes.
+
+5) Reviens dans Settings → Pages : GitHub affiche l’URL du site, du type :
+   https://abigailmatanvi9-cpu.github.io/PORTFOLIO/
+   Copie cette URL exacte dans ton index.html (lien #portfolio-public-url) et
+   sur ton CV.
+
+Vérifications si ça ne marche toujours pas
+------------------------------------------
+- Le fichier index.html doit être à la RACINE du dépôt (pas dans un sous-dossier
+  seul, sauf si tu configures Pages sur ce sous-dossier).
+- Le dépôt doit contenir au moins index.html après le push.
+- Patiente après l’activation : le premier déploiement peut prendre quelques
+  minutes.
+- Nom du dépôt : l’URL utilise exactement ce nom (souvent en minuscules dans
+  l’URL même si tu as mis des majuscules).
+
+Fichier .nojekyll
+-----------------
+Un fichier vide .nojekyll est inclus pour éviter que GitHub traite le site avec
+Jekyll et ignore certains fichiers. Garde-le à la racine du dépôt.
+
+Page en ligne mais affiche seulement « PORTEFEUILLE » (ou presque rien)
+-----------------------------------------------------------------------
+Ce n’est pas le bon site. Le dépôt GitHub n’a pas le même index.html que ton
+dossier sur le PC (le vrai fichier commence par <!DOCTYPE html> et le titre
+« Abigail Matanvi — Portfolio »).
+
+À faire :
+1) Sur github.com → dépôt PORTFOLIO → ouvre index.html et lis les premières
+   lignes. Si ce n’est pas ton portfolio, remplace le fichier.
+2) Upload : Add file → Upload files → glisse le index.html depuis
+   d:\L3\PROJET\SEMINAIRE_MIDA\PORTFOLIO\ (même dossier que dans Cursor).
+3) Upload aussi à la racine du dépôt : styles.css, main.js, .nojekyll, et les
+   dossiers images\ et cv\ (avec leur contenu). Sinon le site sera incomplet.
+4) Rafraîchis le site avec Ctrl+F5.
+
+Si tu utilises Git : « git push » doit être fait depuis le dossier PORTFOLIO
+qui contient le vrai projet, pas un autre dossier ou un dépôt vide.
