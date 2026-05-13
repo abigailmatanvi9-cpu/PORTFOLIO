@@ -2,6 +2,21 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      (function () {
+        var host = location.hostname;
+        if (!host.endsWith("github.io")) return;
+        var path = location.pathname.replace(/\/index\.html$/i, "");
+        var m = path.match(/^\/([^/]+)\/?$/);
+        if (!m) return;
+        var repo = m[1];
+        var base = document.createElement("base");
+        base.href = location.origin + "/" + repo + "/";
+        var head = document.getElementsByTagName("head")[0];
+        var ch = head.querySelector("meta[charset]");
+        head.insertBefore(base, ch ? ch.nextSibling : head.firstChild);
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abigail Matanvi — Portfolio</title>
     <meta
