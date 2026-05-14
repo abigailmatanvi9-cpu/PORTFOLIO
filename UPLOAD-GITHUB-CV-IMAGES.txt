@@ -23,3 +23,7 @@ https://abigailmatanvi9-cpu.github.io/PORTEFEUILLE/
 ---------------------------------
 Cause typique : le fichier sur GitHub ne s’appelle pas exactement
 CV-Abigail-Matanvi.pdf (majuscules, tirets, extension .pdf).
+
+Le fichier main.js transforme aussi les liens du CV en URL absolues sur
+*.github.io (même principe que pour les photos). Envoie la dernière version de
+main.js sur GitHub puis Ctrl+F5.

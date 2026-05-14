@@ -24,6 +24,14 @@
 
   var root = githubPagesRoot();
 
+  if (root) {
+    var cvFile = "CV-Abigail-Matanvi.pdf";
+    var cvUrl = absolutizeAssetPath(cvFile);
+    document.querySelectorAll('a[href="' + cvFile + '"]').forEach(function (a) {
+      a.setAttribute("href", cvUrl);
+    });
+  }
+
   document.querySelectorAll("img.project-shot").forEach(function (img) {
     var fallbackRaw = img.getAttribute("data-fallbacks");
     var paths = [];
