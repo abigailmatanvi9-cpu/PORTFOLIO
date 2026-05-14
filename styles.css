@@ -758,55 +758,6 @@ figure.shot-missing::after {
   color: var(--muted);
 }
 
-.portfolio-for-cv {
-  margin: 0 0 0.25rem;
-  padding: 0.75rem 1rem;
-  max-width: 100%;
-  text-align: center;
-  border-radius: var(--radius);
-  border: 1px dashed var(--border);
-  background: var(--bg-page);
-}
-
-.portfolio-for-cv-label {
-  display: block;
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--muted);
-  margin-bottom: 0.35rem;
-}
-
-.portfolio-for-cv-link {
-  font-size: 0.88rem;
-  font-weight: 600;
-  word-break: break-all;
-  color: var(--text);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.portfolio-for-cv-link:hover {
-  color: var(--muted);
-}
-
-.portfolio-for-cv-note {
-  display: block;
-  margin-top: 0.65rem;
-  font-size: 0.78rem;
-  line-height: 1.45;
-  color: var(--muted);
-  font-weight: 400;
-  max-width: 38ch;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.portfolio-for-cv-note strong {
-  font-weight: 600;
-  color: var(--text);
-}
-
 .site-footer {
   max-width: var(--max);
   margin: 0 auto;

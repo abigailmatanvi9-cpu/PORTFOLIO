@@ -42,8 +42,7 @@ avoir activé Pages.
 
 5) Reviens dans Settings → Pages : GitHub affiche l’URL du site, du type :
    https://abigailmatanvi9-cpu.github.io/PORTFOLIO/
-   Copie cette URL exacte dans ton index.html (lien #portfolio-public-url) et
-   sur ton CV.
+   Copie cette URL exacte sur ton CV.
 
 Vérifications si ça ne marche toujours pas
 ------------------------------------------
