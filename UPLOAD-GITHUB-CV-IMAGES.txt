@@ -1,0 +1,25 @@
+Fichiers à la racine du dépôt (comme sur GitHub)
+=================================================
+
+Le site est réglé pour la même structure que ton dépôt actuel : tout à la
+racine, à côté de index.html.
+
+Obligatoire pour que tout fonctionne :
+- index.html, styles.css, main.js
+- CV-Abigail-Matanvi.pdf   (le lien « CV » pointe vers ce nom exact)
+- hairconnect-1.png, hairconnect-2.png   (captures Hairconnect)
+
+Optionnel (Mechassist) :
+- mechassist-1.png, mechassist-2.png, mechassist-3.png
+
+Si tu préfères des dossiers cv/ et images/, il faudrait remettre les chemins
+dans index.html (images/… et cv/…) ET uploader les fichiers dans ces dossiers
+sur GitHub — la casse compte (images pas Images).
+
+URL du site si le dépôt s’appelle PORTEFEUILLE :
+https://abigailmatanvi9-cpu.github.io/PORTEFEUILLE/
+
+404 « File not found » sur le CV
+---------------------------------
+Cause typique : le fichier sur GitHub ne s’appelle pas exactement
+CV-Abigail-Matanvi.pdf (majuscules, tirets, extension .pdf).

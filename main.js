@@ -1,7 +1,7 @@
 (function () {
   /**
-   * GitHub Pages « projet » : …/github.io/NOM-DEPOT/ — chemins images/…
-   * en absolu pour éviter les 404 (et on attache error avant de charger).
+   * GitHub Pages « projet » : …/github.io/NOM-DEPOT/ — chemins relatifs
+   * (ex. hairconnect-1.png) en absolu pour éviter les 404.
    */
   function githubPagesRoot() {
     var host = location.hostname;

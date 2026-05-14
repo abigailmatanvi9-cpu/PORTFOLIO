@@ -688,7 +688,7 @@ figure.shot-missing .device-frame {
 }
 
 figure.shot-missing::after {
-  content: "Image absente : vérifie sur GitHub que le dossier « images » existe à la racine du dépôt, avec les fichiers (noms en minuscules : hairconnect-1.png, etc.). En local, mets les fichiers à côté de index.html.";
+  content: "Image absente : à la racine du dépôt (à côté de index.html), ajoute les fichiers ex. hairconnect-1.png — noms en minuscules.";
   font-size: 0.78rem;
   line-height: 1.45;
   color: var(--muted);
