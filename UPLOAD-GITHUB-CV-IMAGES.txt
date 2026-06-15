@@ -9,6 +9,7 @@ Obligatoire pour que tout fonctionne :
 - CV-Abigail-Matanvi.pdf   (le lien « CV » pointe vers ce nom exact)
 - hairconnect-1.png, hairconnect-2.png   (captures Hairconnect)
 - mechassist-1.png, mechassist-2.png   (captures Mechassist)
+- photo-abigail.png   (photo de profil)
 
 Optionnel : mechassist-3.png si tu en ajoutes une troisième.
 
