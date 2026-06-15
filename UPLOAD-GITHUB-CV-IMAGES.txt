@@ -8,9 +8,9 @@ Obligatoire pour que tout fonctionne :
 - index.html, styles.css, main.js
 - CV-Abigail-Matanvi.pdf   (le lien « CV » pointe vers ce nom exact)
 - hairconnect-1.png, hairconnect-2.png   (captures Hairconnect)
+- mechassist-1.png, mechassist-2.png   (captures Mechassist)
 
-Optionnel (Mechassist) :
-- mechassist-1.png, mechassist-2.png, mechassist-3.png
+Optionnel : mechassist-3.png si tu en ajoutes une troisième.
 
 Si tu préfères des dossiers cv/ et images/, il faudrait remettre les chemins
 dans index.html (images/… et cv/…) ET uploader les fichiers dans ces dossiers
